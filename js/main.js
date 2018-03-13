@@ -17,12 +17,7 @@ function getRandomImage() {
   var max = 4962;
   var num = Math.floor(Math.random() * (max - min + 1)) + min;
   var path = "img/071.German_shepherd_dog/German_shepherd_dog_0"+num+".jpg"
-  // var directory = "file:///Users/spbelky/Hax/dird-training/"
-  // dogImg.src = directoty + path;
-  // // for local, ^
   dogImg.src = path;
-  console.log("getting image", path);
-  console.log(dogImg);
   setTimeout(function(){ drawCanvas(); }, 1000); //i hate that i have to do set a timeout
 }
 
@@ -70,7 +65,6 @@ function recordClick(event) {
 function createPoint (dataPoint) {
   var container = document.getElementById("container");
   var point = document.createElement("div");
-  var label = document.createElement("div");
   point.classList.add("point");
   point.id = dataPoint.name+"_point";
   point.style.top = dataPoint.y + "px";
@@ -78,6 +72,11 @@ function createPoint (dataPoint) {
   container.appendChild(point);
   point.addEventListener("mousedown", deletePoint, false);
   refreshForm();
+  // add label to point
+  var label = document.createElement("div");
+  label.innerHTML = dataPoint.name;
+  label.classList.add("label");
+  point.appendChild(label);
 }
 
 function deletePoint(event) {

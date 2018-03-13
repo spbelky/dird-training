@@ -18,7 +18,12 @@
 .point:hover {
   cursor: pointer;
   border-color: red;
-};
+}
 .hide {
   display: none;
+}
+.label {
+  color: #00ff00;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  pointer-events: none;
 }

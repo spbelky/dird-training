@@ -16,9 +16,11 @@ function getRandomImage() {
   var min = 4885;
   var max = 4962;
   var num = Math.floor(Math.random() * (max - min + 1)) + min;
-  var directory = "file:///Users/spbelky/Hax/dird-training/"
   var path = "img/071.German_shepherd_dog/German_shepherd_dog_0"+num+".jpg"
-  dogImg.src = directory + path;
+  // var directory = "file:///Users/spbelky/Hax/dird-training/"
+  // dogImg.src = directoty + path;
+  // // for local, ^
+  dogImg.src = path;
   setTimeout(function(){ drawCanvas(); }, 50); //i hate that i have to do set a timeout
 }
 

@@ -21,7 +21,7 @@ function getRandomImage() {
   // dogImg.src = directoty + path;
   // // for local, ^
   dogImg.src = path;
-  setTimeout(function(){ drawCanvas(); }, 50); //i hate that i have to do set a timeout
+  setTimeout(function(){ drawCanvas(); }, 1000); //i hate that i have to do set a timeout
 }
 
 function drawCanvas() {

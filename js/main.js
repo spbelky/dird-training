@@ -126,4 +126,4 @@ function formatSummary() {
   return string;
 }
 
-$(getRandomImage(););
+$(getRandomImage());

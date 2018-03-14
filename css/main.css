@@ -1,5 +1,5 @@
 .done {
-  color: green;
+  color: #36ADE7;
 }
 .done:after {
   content: '\2713';
@@ -11,7 +11,7 @@
   position: absolute;
   height: 10px;
   width: 10px;
-  border: 3px solid #00ff00;
+  border: 3px solid #36ADE7;
   border-radius: 10px;
   transform: translate(-50%, -50%);
 }
@@ -23,7 +23,37 @@
   display: none;
 }
 .label {
-  color: #00ff00;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  color: #36ADE7;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
   pointer-events: none;
+}
+body {
+  padding-top: 0px;
+  font-family: "apercu-regular";
+}
+@font-face {
+ font-family: "apercu-regular";
+ src: url("fonts/apercu-regular.eot");
+ src: url("fonts/apercu-regular.eot?#iefix") format("embedded-opentype"), url("fonts/apercu-regular.woff") format("woff"), url("fonts/apercu-regular.ttf") format("truetype"), url("fonts/apercu-regular.svg#apercuregular") format("svg");
+ font-weight: normal;
+ font-style: normal; 
+}
+@font-face {
+ font-family: "burbank-bold";
+ src: url("fonts/BurbankSmall-Bold.eot");
+ src: url("fonts/BurbankSmall-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/BurbankSmall-Bold.woff") format("woff"), url("fonts/BurbankSmall-Bold.ttf") format("truetype"), url("fonts/BurbankSmall-Bold.svg#burbankbold") format("svg");
+ font-weight: normal;
+ font-style: normal; 
+}
+span {
+  font-size: 20px;
+}
+h1 {
+  font-family: "burbank-bold";
+  font-size: 38px;
+}
+h3 {
+  font-size: 22px;
+  line-height: 28px; 
 }
